@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+a {
+    color: #fa713e;
+    text-decoration: none;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+
+a:hover {
+    color: #c34f25;
+    text-decoration: none;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+header {
+    float: left;
+    background-color: #151515;
+    width: 99.4%;
+    padding: 0.3%;
+    border-bottom: 5px solid #59595a;
+}
+
+header>div#logo>a {
+    color: silver;
+}
+
+@media (min-width: 950px) {
+    header>div#logo>a>span {
+        font-size: 30px;
+        margin-left: 10px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    #logo {
+        float: left;
+        width: 30%;
+    }
+
+    #about {
+        float: left;
+        width: 37%;
+    }
+
+    #donate {
+        float: right;
+        width: 30%;
+    }
+}
+
+@media (max-width: 949px) and (min-width: 525px) {
+    header>div#logo>a>span {
+        font-size: 45px;
+        margin-left: 10px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    #logo {
+        float: left;
+        width: 50%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #donate {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media (max-width: 524px) {
+    header>div#logo>a>span {
+        font-size: 45px;
+        margin-left: 10px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #donate {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#about {
+    text-align: center;
+    font-family: 'PT Sans Narrow', serif;
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+
+#about>a {
+    color: #ffffff;
+}
+
+#about>a:hover {
+    color: #dfdfdf;
+    border-bottom: 1px solid silver;
+}
+
+#about>a:last-child {
+    margin-left: 10%;
+}
+
+#donate>a {
+    color: #ffffff;
+}
+
+#donate>a:hover>div.btn {
+    border-bottom: 2px solid rgba(217, 91, 72, 1);
+    margin-top: 7px;
+}
+
+#donate>a:active>div.btn {
+    border-bottom: 0;
+    margin-top: 9px;
+}
+
+#donate>a>div.btn {
+    float: right;
+    margin-right: 3%;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: rgba(236, 101, 80, 1);
+    text-shadow: #454545 0 0 2px;
+    border-bottom: 4px solid rgba(217, 91, 72, 1);
+    font-family: 'PT Sans Narrow', serif;
+}
+
+/* Основное тело сайта*/
+
+.landing>h1 {
+    text-align: center;
+    font-family: "PT Sans Narrow";
+}
+
+
+.landing {
+    padding: 10px;
+
+    font-family: "PT Sans Narrow";
+}
+
+
+/* Галерея */
+
+.gallery img {
+    margin: 5px;
+    border: 2px solid silver;
+}
+
+a.photo:hover img {
+    border: 3px solid #fff;
+}
+
+/* Подвал сайта*/
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+footer {
+    float: left;
+    background-color: #151515; /*#151515*/
+    width: 98%;
+    padding: 1%;
+    border-top: 3px solid #59595a;
+    color: #ffffff;
+    font-family: "PT Sans Narrow", serif;
+    text-align: center;
+}
+
+/* Анимированный Title*/
+
+#floatTip {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 250px; /* Ширина блока */
+    display: none; /* Прячем от показа */
+    border: 1px solid #000; /* Параметры рамки */
+    padding: 5px; /* Поля вокруг текста */
+    font-family: sans-serif; /* Рубленый шрифт */
+    font-size: 15pt; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    background: #ECF5E4; /* Цвет фона */
+}
